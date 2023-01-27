@@ -17,5 +17,19 @@ public class OperatorTest {
         //分两步
         //先比较a,b的最大值
         //拿a,b的最大值和c进行比较
+        int temp = ((a > b) ? a : b);
+        System.out.println(temp);
+        max = ((max > c) ? max : c);
+        System.out.println(max);
+
+        //一步搞定
+        int max2 = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+
+        //比较两个整数是否相同
+        int m = 100;
+        int n = 200;
+
+        boolean flag = (m == n) ? true : false;
+        System.out.println(flag);
     }
 }
